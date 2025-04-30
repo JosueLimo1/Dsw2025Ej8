@@ -2,6 +2,13 @@
 ## Desarrollo de Software
 ### Herencia y propiedades
 
+INTEGRANTES: 
+Com 3k1
+	-Josue Limo, 58000, Josue.LimoMunoz@alu.frt.utn.edu.ar, 
+	-Nicolas Quinteros, 53049, nicoquinteros.nq@gmail.com
+	-Ignacio Hillen, 58122, Ignacio.Hillen@alu.frt.utn.edu.ar
+
+
 1. Realizar una bifurcación (fork) del [repositorio](https://github.com/ing-software-frt-utn/dsw2025ej8)
 2. Crear una rama de larga duración development
 3. Clonar el repositorio bifurcado y trabajar sobre la rama development
@@ -23,3 +30,4 @@ Consideraciones:
 - CuentaNoActiva -> No se puede operar con la cuenta {estado} (reemplazar por el estado en el que se encuentra)
 - SaldoInsuficiente -> La cuenta no cuenta con saldo para la operación solicitada. Fue suspendida.
 - La aplicación no debe interrumpir su funcionamiento si se produce una excepción.
+- 
