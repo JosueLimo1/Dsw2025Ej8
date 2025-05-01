@@ -1,16 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Dsw2025Ej8.Domain
+﻿namespace Dsw2025Ej8.Domain
 {
-    internal class CajaDeAhorro : CuentaBancaria
+    public class CajaDeAhorro : CuentaBancaria
     {
-        public void Depositar(decimal monto)
+        public decimal TasaDeInteres { get; private set; }
+
+        public CajaDeAhorro(string numero, decimal saldo) : base(numero, saldo)
         {
-            base.Depositar(monto);
+        }
+
+        public override void Depositar(decimal monto)
+        {
+            Saldo += monto;
+        }
+
+        public override void Retirar(decimal monto)
+        {
+            Saldo -= monto;
+        }
+
+        public void AplicarInteres()
+        {
+            Saldo += Saldo * TasaDeInteres;
+        }
+
+        public void EstablecerTasaInteres(decimal tasa)
+        {
+            TasaDeInteres = tasa;
         }
     }
 }
