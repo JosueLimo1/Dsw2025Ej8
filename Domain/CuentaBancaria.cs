@@ -20,6 +20,11 @@ public abstract class CuentaBancaria
         this.Titulares = titulares;
     }
 
+    public void EstadoCuenta(Estado estado)
+    {
+        this.Estado = estado;
+    }
+
     public abstract void Retirar(decimal monto);
     public abstract void Depositar(decimal monto);
 }
